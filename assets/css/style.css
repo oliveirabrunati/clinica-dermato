@@ -74,6 +74,27 @@ button {
   margin: 20px 0;
 }
 
+.div-numbers {
+  background-color: white;
+  border-radius: 5px;
+  height: 434px;
+}
+.number-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding-top: 49px;
+}
+
+.number {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
+  color: #111111;
+}
+
 @media screen and (min-width: 992px) {
   .initial-section {
     padding: 0 80px;
@@ -100,6 +121,8 @@ button {
   }
   .img-destaque {
     min-width: 608px;
+    margin-top: 57px;
+    margin-left: 45px;
   }
   .initial-section p {
     font-weight: 400;
@@ -117,17 +140,25 @@ button {
     justify-content: space-between;
     width: 1162px;
     height: 206px;
-    background-color: white;
-    border-radius: 5px;
     padding: 0 132px;
   }
-  .number-group::after{
+  #clients-vertical-line::after {
     content: " ";
-    width: 10px;
-    height: 10px;
-    color: black;
+    height: 72px;
+    border: 2px solid #7e623c;
+    position: absolute;
+    left: 500px;
+    top: 678px;
   }
-  .number-group{
+  #years-vertical-line::after {
+    content: " ";
+    height: 72px;
+    border: 2px solid #7e623c;
+    position: absolute;
+    left: 920px;
+    top: 678px;
+  }
+  .number-group {
     display: flex;
     flex-direction: column;
     justify-content: center;
