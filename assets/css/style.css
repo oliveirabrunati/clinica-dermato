@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+  color: #2e2e2e;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #644b2c;
+}
+
+button {
+  width: 223px;
+  height: 50px;
+  background: #dc2427;
+  border-style: none;
+  border-radius: 5px;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.img-destaque {
+  margin-top: 28px;
+}
+
+.initial-section {
+  padding: 36px;
+  background: #f7f1df;
+}
+
+.initial-section h2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 130%;
+  color: #dc2428;
+}
+
+.initial-section p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  margin: 20px 0;
+}
+
+@media screen and (min-width: 992px) {
+  .initial-section {
+    padding: 0 80px;
+  }
+  .logo {
+    margin: 48px 0 0;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    color: #644b2c;
+  }
+  ul {
+    display: flex;
+    margin: 48px 0 0;
+    gap: 48px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    color: #644b2c;
+  }
+  .cta-section {
+    display: flex;
+    align-items: center;
+  }
+  .img-destaque {
+    min-width: 608px;
+  }
+  .initial-section p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 130%;
+    color: #2e2e2e;
+  }
+  button {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .div-numbers {
+    display: flex;
+    justify-content: space-between;
+    width: 1162px;
+    height: 206px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 0 132px;
+  }
+  .number-group::after{
+    content: " ";
+    width: 10px;
+    height: 10px;
+    color: black;
+  }
+  .number-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
+  .number {
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 100%;
+  }
+  .description {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    color: #2e2e2e;
+  }
+}
