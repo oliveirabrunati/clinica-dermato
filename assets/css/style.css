@@ -55,12 +55,15 @@ button {
   margin-top: 28px;
 }
 
-.initial-section {
+section {
   padding: 36px;
+}
+
+.initial-section {
   background: #f7f1df;
 }
 
-.initial-section h2 {
+h2 {
   font-weight: 700;
   font-size: 24px;
   line-height: 130%;
@@ -95,6 +98,73 @@ button {
   color: #111111;
 }
 
+/* Services Section */
+
+.services-section {
+  background: #e4d0b4;
+}
+
+.services-section h2 {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 130%;
+  color: #000000;
+  margin: 20px 0;
+  inline-size: 250px;
+  overflow-wrap: break-word;
+}
+
+.card p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  color: #2e2e2e;
+}
+
+.curve {
+  margin: 10px 10px 0;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  float: left;
+}
+
+#icon-limpeza {
+  background: url("/assets/image/icon-limpeza-pele.svg") no-repeat;
+}
+
+#icon-peeling {
+  background: url("/assets/image/icon-peeling.svg") no-repeat;
+}
+
+#icon-radiesse {
+  background: url("/assets/image/icon-radiesse.svg") no-repeat;
+}
+
+#icon-lifting {
+  background: url("/assets/image/icon-lifting.svg") no-repeat;
+}
+
+#icon-drenagem {
+  background: url("/assets/image/icon-drenagem.svg") no-repeat;
+}
+
+#icon-micro {
+  background: url("/assets/image/icon-microagulhamento.svg") no-repeat;
+}
+
 @media screen and (min-width: 992px) {
   .initial-section {
     padding: 0 80px;
@@ -123,6 +193,9 @@ button {
     min-width: 608px;
     margin-top: 57px;
     margin-left: 45px;
+  }
+  .initial-section h2 {
+    font-size: 48px;
   }
   .initial-section p {
     font-weight: 400;
@@ -175,5 +248,24 @@ button {
     font-size: 20px;
     line-height: 100%;
     color: #2e2e2e;
+  }
+  /* Services Section  */
+  .services-section h2 {
+    font-size: 36px;
+    padding-top: 80px;
+  }
+  section {
+  }
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 45px;
+    padding-bottom: 80px;
+  }
+  .card{
+    flex-basis: 30%;
+  }
+  .card p{
+    font-size: 16px;
   }
 }
