@@ -192,6 +192,34 @@ h2 {
   display: none;
 }
 
+/* FAQ Section */
+
+.faq-section{
+  background: #FFFFFF;
+  padding: 48px 36px;
+  margin: 0;
+}
+
+.faq-section p{
+  margin-top: 20px;
+}
+
+#faq-image{
+  display: none;
+}
+
+.question{
+  border: 1px solid #B2B2B2;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.question-group{
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
 @media screen and (min-width: 992px) {
   .initial-section {
     padding: 0 80px;
@@ -327,5 +355,15 @@ h2 {
   }
   .about-clinic {
     width: 50%;
+  }
+  /* FAQ Sectio */
+  .faq-section{
+    padding: 0 80px ;
+    margin: 80px 0;
+    display: flex;
+    gap: 80px;
+  }
+  .faq-section p{
+    padding-right: 40px;
   }
 }
