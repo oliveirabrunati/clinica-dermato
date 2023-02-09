@@ -451,6 +451,10 @@ summary:focus {
   .summary-content{
     padding: 0px 35px 20px 35px;
   }
+  .summary-chevron-up,
+  .summary-chevron-down{
+  right: 20px;
+  }
   /* Testimonial Section */
   .testimonials-section {
     padding: 95px 140px;
