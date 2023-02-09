@@ -295,6 +295,61 @@ summary:focus {
   color: #d6d615;
 }
 
+footer {
+  background: #644b2c;
+  padding: 36px;
+}
+
+footer h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: #ffffff;
+  margin-bottom: 36px;
+}
+
+footer span {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: 0.015em;
+  color: #ffffff;
+  margin-bottom: 17px;
+}
+
+.cols h3 {
+  padding-right: 164px;
+}
+
+.col-1 {
+  padding-right: 146px;
+}
+
+hr {
+  margin: 17px 0;
+}
+
+.text-upper {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 130%;
+  padding-bottom: 36px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.medias {
+  display: flex;
+  padding-top: 16px;
+  padding-bottom: 36px;
+  gap: 36px;
+}
+
+.data-group {
+  display: flex;
+  flex-direction: column;
+}
+
 @media screen and (min-width: 992px) {
   .initial-section {
     padding: 0 80px;
@@ -445,15 +500,15 @@ summary:focus {
     display: block;
     width: 524px;
   }
-  .questions{
+  .questions {
     width: 1000px;
   }
-  .summary-content{
+  .summary-content {
     padding: 0px 35px 20px 35px;
   }
   .summary-chevron-up,
-  .summary-chevron-down{
-  right: 20px;
+  .summary-chevron-down {
+    right: 20px;
   }
   /* Testimonial Section */
   .testimonials-section {
@@ -472,5 +527,24 @@ summary:focus {
   }
   .star-ratting {
     padding: 10px 0;
+  }
+  /* Footer */
+  .footer {
+    padding: 0 80px;
+  }
+  .cols {
+    display: flex;
+  }
+  .cols {
+    padding-top: 50px;
+  }
+  .col-1 {
+    padding-right: 176px;
+  }
+  .medias {
+    padding-bottom: 76px;
+  }
+  .copyright {
+    padding-bottom: 24px;
   }
 }
