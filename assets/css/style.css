@@ -22,21 +22,36 @@ h6 {
   padding: 0;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
+#icon-menu {
+  display: block;
+  padding-bottom: 15px;
+  cursor: pointer;
 }
 
 .logo {
-  display: flex;
-  align-items: center;
+  font-size: 18px;
+  text-align: right;
+  padding: 0px 30px;
+  position: absolute;
+  right: 10px;
 }
 
-.menu {
+.nav {
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
   color: #644b2c;
+}
+
+.menu a{
+  display: block;
+  margin: 5px 0;
+  border-bottom: 1px solid #f3d7b6;
+}
+
+.menu a:hover{
+  border-bottom: 0;
+  background-color: #f3d7b6;
 }
 
 button {
@@ -53,6 +68,14 @@ button {
 
 button:hover {
   background: #ffccd1;
+  color: #dc2428;
+}
+
+a {
+  color: #644b2c;
+}
+
+a:hover {
   color: #dc2428;
 }
 
@@ -213,12 +236,6 @@ h2 {
   margin-bottom: 20px;
 }
 
-/* .question-group {
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
-} */
-
 details {
   font-size: 1rem;
   border-radius: 5px;
@@ -267,7 +284,8 @@ summary:focus {
   border-radius: 3.50639px;
   gap: 14px;
   margin-top: 43px;
-  width: 311px;
+  /* width: 311px; */
+  width: 100%;
 }
 
 .testimonials-card h3 {
@@ -350,26 +368,48 @@ hr {
   flex-direction: column;
 }
 
+/*  Slide */
+.arrow{
+  display: none;
+}
+
+.mCard{
+  display: none;
+}
+
 @media screen and (min-width: 992px) {
   .initial-section {
-    padding: 0 80px;
+    padding: 48px 80px 0 80px;
     height: 700px;
   }
   .logo {
-    margin: 48px 0 0;
+    padding: 0;
+    margin: 10px 70px 0;
     font-weight: 700;
     font-size: 24px;
     line-height: 24px;
     color: #644b2c;
   }
-  ul {
+  nav{
+    display: block;
+  }
+  .menu a{
+    margin: 0;
+    border-bottom: 0;
+  }
+  .menu a:hover{
+    background-color: transparent;
+  }
+  #icon-menu {
+    display: none;
+  }
+  .initial-section ul {
     display: flex;
-    margin: 48px 0 0;
+    margin: 0;
     gap: 48px;
     font-weight: 700;
     font-size: 24px;
     line-height: 24px;
-    color: #644b2c;
   }
   .cta-section {
     display: flex;
@@ -512,21 +552,105 @@ hr {
   }
   /* Testimonial Section */
   .testimonials-section {
-    padding: 95px 140px;
+    padding: 95px 145px;
   }
   .testimonials-section h2 {
     text-align: center;
     padding-bottom: 20px;
   }
   .testimonials-card {
-    width: 50%;
+    width: 490px;
+    margin-right: 40px;
+  }
+  .slide {
+    display: flex;
+    flex-direction: row;
+  }
+  .slide li {
+    flex-shrink: 0;
+    list-style: none;
+    gap: 30px;
   }
   .testimonials {
     display: flex;
-    gap: 50px;
   }
   .star-ratting {
     padding: 10px 0;
+  }
+  /* Slide */
+  .card-group{
+    display: flex;
+  }
+  .left {
+    margin-right: 20px;
+  }
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 215rem;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: #dc2428;
+    font-weight: bold;
+    font-size: 42px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  .prev{
+    left: 6%;
+  }
+  /* Position the "next button" to the right */
+  .next {
+    right: 9%;
+    border-radius: 3px 0 0 3px;
+  }
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background: #ffccd1;
+    color: #dc2428;
+  }
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  .active,
+  .dot:hover {
+    background-color: #717171;
+  }
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev,
+    .next,
+    .text {
+      font-size: 11px;
+    }
   }
   /* Footer */
   .footer {
