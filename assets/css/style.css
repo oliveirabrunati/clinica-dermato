@@ -156,10 +156,13 @@ h2 {
   font-weight: 700;
   font-size: 20px;
   line-height: 130%;
-  color: #000000;
   margin: 20px 0;
   inline-size: 250px;
   overflow-wrap: break-word;
+}
+
+.red{
+  color:#dc2428;
 }
 
 .card p {
