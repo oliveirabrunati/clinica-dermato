@@ -35,6 +35,10 @@ h6 {
   right: 10px;
 }
 
+header{
+  margin-bottom: 26px;
+}
+
 .nav {
   display: none;
 }
