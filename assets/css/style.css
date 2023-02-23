@@ -30,27 +30,23 @@ h6 {
 
 .logo {
   font-size: 18px;
-  text-align: right;
   padding: 0px 30px;
   position: absolute;
   right: 10px;
 }
 
-#nav{
-  display: none;
-}
-
 .nav {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 24px;
-  color: #644b2c;
+  display: none;
 }
 
 .menu a{
   display: block;
   margin: 5px 0;
   border-bottom: 1px solid #f3d7b6;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #644b2c;
 }
 
 .menu a:hover{
