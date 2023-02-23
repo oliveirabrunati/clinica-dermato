@@ -13,7 +13,7 @@
   <script src="./assets/js/script.js" defer></script>
   <title>Dermato</title>
 </head>
-<body >
+<body onresize="mudarTamanho()">
   <section class="initial-section">
     <header>
       <h1 class="logo">DERMATO</h1>
@@ -185,7 +185,7 @@
 
         <!-- <img src="./assets/image/arrow-left.svg" alt="" class="arrow left"> -->
         
-        <div class=" mySlides fade">
+        <div class="mySlides fade">
           <div class="card-group">
 
             <div class="testimonials-card">
@@ -258,7 +258,7 @@
       </div>
       <br>
         
-       <div style="text-align:center">
+       <div class="dots" style="text-align:center">
          <span class="dot" onclick="currentSlide(1)"></span> 
          <span class="dot" onclick="currentSlide(2)"></span> 
          <span class="dot" onclick="currentSlide(3)"></span> 

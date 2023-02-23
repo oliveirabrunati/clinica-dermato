@@ -35,7 +35,7 @@ h6 {
   right: 10px;
 }
 
-header{
+header {
   margin-bottom: 26px;
 }
 
@@ -43,7 +43,7 @@ header{
   display: none;
 }
 
-.menu a{
+.menu a {
   display: block;
   margin: 5px 0;
   border-bottom: 1px solid #f3d7b6;
@@ -53,7 +53,7 @@ header{
   color: #644b2c;
 }
 
-.menu a:hover{
+.menu a:hover {
   border-bottom: 0;
   background-color: #f3d7b6;
 }
@@ -288,7 +288,6 @@ summary:focus {
   border-radius: 3.50639px;
   gap: 14px;
   margin-top: 43px;
-  /* width: 311px; */
   width: 100%;
 }
 
@@ -373,12 +372,49 @@ hr {
 }
 
 /*  Slide */
-.arrow{
+.arrow {
   display: none;
 }
 
-.mCard{
+#mCard {
   display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  display: none;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation Slide Card */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -386,7 +422,7 @@ hr {
     padding: 48px 80px 0 80px;
     height: 700px;
   }
-  header{
+  header {
     display: flex;
     justify-content: space-between;
     padding-right: 36px;
@@ -399,21 +435,21 @@ hr {
     line-height: 24px;
     color: #644b2c;
   }
-  .nav{
+  .nav {
     display: block;
   }
-  .menu{
+  .menu {
     margin-right: 0px;
     font-weight: 700;
     font-size: 24px;
     line-height: 24px;
   }
-  .menu a{
+  .menu a {
     margin: 0;
     border-bottom: 0;
     font-size: 24px;
   }
-  .menu a:hover{
+  .menu a:hover {
     background-color: transparent;
   }
   #icon-menu {
@@ -594,7 +630,10 @@ hr {
     padding: 10px 0;
   }
   /* Slide */
-  .card-group{
+  #mCard {
+    display: flex;
+  }
+  .card-group {
     display: flex;
   }
   .left {
@@ -603,6 +642,7 @@ hr {
   /* Next & previous buttons */
   .prev,
   .next {
+    display: block;
     cursor: pointer;
     position: absolute;
     top: 215rem;
@@ -624,49 +664,15 @@ hr {
     right: 9%;
     border-radius: 3px 0 0 3px;
   }
-  /* On hover, add a black background color with a little bit see-through */
+  /* On hover, add a soft pink background color */
   .prev:hover,
   .next:hover {
     background: #ffccd1;
     color: #dc2428;
   }
-  /* The dots/bullets/indicators */
   .dot {
-    cursor: pointer;
     height: 15px;
     width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  .active,
-  .dot:hover {
-    background-color: #717171;
-  }
-  /* Fading animation */
-  .fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-
-  @keyframes fade {
-    from {
-      opacity: 0.4;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-
-  /* On smaller screens, decrease text size */
-  @media only screen and (max-width: 300px) {
-    .prev,
-    .next,
-    .text {
-      font-size: 11px;
-    }
   }
   /* Footer */
   .footer {
