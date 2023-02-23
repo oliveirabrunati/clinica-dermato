@@ -386,20 +386,32 @@ hr {
     padding: 48px 80px 0 80px;
     height: 700px;
   }
+  header{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 36px;
+  }
   .logo {
+    position: initial;
     padding: 0;
-    margin: 10px 70px 0;
     font-weight: 700;
     font-size: 24px;
     line-height: 24px;
     color: #644b2c;
   }
-  nav{
+  .nav{
     display: block;
+  }
+  .menu{
+    margin-right: 0px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
   }
   .menu a{
     margin: 0;
     border-bottom: 0;
+    font-size: 24px;
   }
   .menu a:hover{
     background-color: transparent;
